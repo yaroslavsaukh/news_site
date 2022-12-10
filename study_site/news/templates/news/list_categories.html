@@ -1,0 +1,8 @@
+<div class="list-group">
+    {% for i in categories %}
+    <a href="{{i.get_absolute_url}}" class="list-group-item list-group-item-action">
+        {{i.title}}
+        <span class="badge badge-warning" style="background-color: #0a53be !important;">{{i.cnt}}</span>
+    </a>
+    {% endfor %}
+</div>
